@@ -1,0 +1,88 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 0px;
+}
+
+.logo {
+    padding: 10px 0px;
+}
+
+.row-with-height {
+    height: 150px;
+}
+
+.search-bar-col, .logo-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-col {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.search-bar {
+    border-color: orange;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 10px 10px 10px 20px;
+    color: orange;
+}
+
+.search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: orange;
+text-transform: uppercase;
+}
+
+.header-divider {
+    height: 40px;
+    background-color: orange;
+}
+
+.jumbotron {
+    position: relative;
+    height: 600px;
+    padding-bottom: 150px;
+    background-attachment: fixed;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.jumbotron {
+    padding: 0;
+}
+
+.menu-items {
+    
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-square {
+    background-color: lightgray;
+    width: 80%;
+    padding-top: 80%;
+    margin-top: 30px;
+    
+}
+
+
+
+
+
+
