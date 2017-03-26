@@ -127,6 +127,10 @@ svg {
     margin-top: 100px;
 }
 
+.featured-row {
+    height: 250px;
+}
+
 .category-title-text h2 {
     text-transform: uppercase;
 }
@@ -138,19 +142,21 @@ svg {
 .category-featured {
     display: flex;
     align-items: center;
-    flex-direction: row;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .category-featured-text {
-    width: 60%;
-    margin-left: 20px;
+    width: 80%;
 }
 
 .featured-image-container {
-   width: 40%;
-    text-align: center;
+   display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #f6f6f6
 }
 
 .category-featured-text h6 span {
