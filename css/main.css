@@ -67,9 +67,9 @@ text-transform: uppercase;
 }
 
 
-.jumbotron {
+.hero.jumbotron {
     position: relative;
-    height: 600px;
+    height: 70vh;
     padding-bottom: 150px;
     background-attachment: fixed;
 }
@@ -100,9 +100,122 @@ svg {
     width: 80%;
     margin-left: 10%;
     padding-top: 80%;
+    margin-top: 30px;      
+}
+
+.category-title {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 250px; 
+}
+
+.category-featured {
+    height: 250px;
+}
+
+.category-title {
+    background-color: #eee
+}
+
+.category-featured {
+    background-color: #f6f6f6;
+}
+
+.category-1 {
+    margin-top: 100px;
+}
+
+.category-title-text h2 {
+    text-transform: uppercase;
+}
+
+.category-title-text h2, .category-title-text h3 {
+    text-align: center;
+}
+
+.category-featured {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.category-featured-text {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.featured-image-container {
+   width: 40%;
+    text-align: center;
+}
+
+.category-featured-text h6 span {
+    padding: 10px;
+    background: orange;
+    color: white;
+}
+
+.category-featured-text h5 {
     margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     
 }
+
+.category-featured-text h5 span {
+    padding: 10px;
+    background: orange;
+    color: white;
+}
+
+.category-featured-text h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px 0;
+}
+
+
+.category-products {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 700px;
+    background-color: #f6f6f6;
+}
+
+
+.hero-product-image {
+    height: 700px;
+    background-color: #eee;
+}
+
+.category-image {
+    width: 50%;
+    text-align: center;
+}
+
+.category-image img {
+    width: 80%;
+    height: auto;
+}
+
+.featured-image-text {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 
 
@@ -168,4 +281,6 @@ svg {
 .spacer {
     height: 1000px;
 }
+
+
 
