@@ -8,6 +8,15 @@ body {
     padding-top: 0px;
 }
 
+ .affix {
+      top: 0;
+      width: 100%
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
 .logo {
     padding: 10px 0px;
     max-width: 100%;
@@ -46,6 +55,7 @@ text-transform: uppercase;
 
 .header-divider {
     background-color: orange;
+    z-index: 9999;
 }
 
 .menu-item {
@@ -94,6 +104,8 @@ svg {
     
 }
 
+
+
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
@@ -130,6 +142,11 @@ svg {
     width: 200px;
 }    
         
+    .logo-menu {
+    height: 150px;
+}
+
+        
     }
 
     /* Medium Devices, Desktops */
@@ -151,3 +168,4 @@ svg {
 .spacer {
     height: 1000px;
 }
+
