@@ -38,7 +38,7 @@ a:hover {
     right: 0;
     background-color: rgba(255,255,255,0.8); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding: 0px !important; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -56,9 +56,15 @@ a:hover {
 }
 
 /* When you mouse over the navigation links, change their color */
+
+.sidenav .menu-item {
+    transition: all 0.2s;
+}
+
 .sidenav .menu-item:hover, .offcanvas a:focus{
-    color: #3c3c3c;
-    border: 1px solid orange;
+    color: #ffffff;
+    background-color: orange;
+    
 }
 
 /* Position and style the close button (top right corner) */
@@ -191,6 +197,8 @@ svg {
     margin-top: 30px;      
 }
 
+/******START REDUNDANT CODE **************/
+
 .category-title {
     display: flex;
     align-content: center;
@@ -307,6 +315,40 @@ svg {
     height: 100%;
     width: 100%;
 }
+
+/******* END REDUNDANT CODE **********/
+
+
+.big-four {
+    padding-bottom: 40px;
+}
+
+.sale-products {
+    margin-top: 250px;
+    height: 800px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.sale-products-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: orange;
+    color: #ffffff;
+    margin-top: -125px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sale-products-header h2 {
+    text-transform: uppercase;
+}
+
 
 
 
