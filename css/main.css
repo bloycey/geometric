@@ -394,12 +394,12 @@ svg {
     position: relative;
 }
 
-.sale-products-header {
+.standard-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 230px;
     background-color: orange;
     color: #ffffff;
     margin-top: -125px;
@@ -408,6 +408,10 @@ svg {
     padding: 0 20px;
     text-align: center;
     box-shadow: 5px 5px 20px #888888;
+}
+
+.bottom-header {
+    margin-bottom: -125px;
 }
 
 .sale-products-header h2 {
@@ -426,6 +430,10 @@ svg {
     margin-bottom: 150px;
 }
 
+.testimonials-slider {
+    margin-top: 200px;
+    margin-bottom: 500px;
+}
 
 
 /*==========  Mobile First Method  ==========*/
@@ -468,9 +476,9 @@ svg {
     height: 150px;
 }
 
-        .sale-products-header {
-            width: 70%;
-            margin-left: 15%;
+        .standard-header {
+            width: 60%;
+            margin-left: 20%;
         }
         
     }

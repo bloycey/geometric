@@ -1,3 +1,11 @@
+$(document).ready(function(){
+  $('.testimonial-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300
+  });
+});
+
 /* Set the width of the side navigation to 250px */
 
 if ($(window).width() < 480) {
