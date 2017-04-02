@@ -101,8 +101,6 @@ a:hover {
     padding: 5px
 }
 
-
-
 .logo {
     padding: 10px 0px;
     max-width: 100%;
@@ -110,8 +108,10 @@ a:hover {
 }
 
 .row-with-height {
-    height: 100px;
+    height: 180px;
 }
+
+
 
 .search-bar-col, .logo-section {
     height: 100%;
@@ -142,10 +142,16 @@ text-transform: uppercase;
 .header-divider {
     background-color: orange;
     z-index: 9999;
+    margin-top: 0px
 }
 
 .menu-container {
-    height: 40px;
+    position: relative;
+    height: 50px;
+}
+
+.menu-row {
+    height: 50px;
 }
 
 .menu-social {
@@ -154,13 +160,30 @@ text-transform: uppercase;
 
 .menu-menu {
     text-align: center;
-    padding:5px;
+    padding: 5px;
 }
 .menu-menu button {
     padding: 10px 20px;
     background-color: #ffffff;
     color: orange;
     font-weight: bold;
+}
+
+.cart-box {
+    position: absolute;
+    right: 0;
+    background-color: #9f9f9f;
+    height: 100px;
+    width: 100px;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+
+.menu-menu i {
+    color: #ffffff;
+    font-size: 20px;
+    height: 100%;
 }
 
 .hero.jumbotron {
@@ -262,127 +285,6 @@ svg {
     margin-top: 30px;      
 }
 
-/******START REDUNDANT CODE **************/
-
-.category-title {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    height: 250px; 
-}
-
-.category-featured {
-    height: 250px;
-}
-
-.category-title {
-    background-color: #eee
-}
-
-.category-featured {
-    background-color: #f6f6f6;
-}
-
-.category-1 {
-    margin-top: 100px;
-}
-
-.featured-row {
-    height: 250px;
-}
-
-.category-title-text h2 {
-    text-transform: uppercase;
-}
-
-.category-title-text h2, .category-title-text h3 {
-    text-align: center;
-}
-
-.category-featured {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.category-featured-text {
-    width: 80%;
-}
-
-.featured-image-container {
-   display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    background-color: #f6f6f6
-}
-
-.category-featured-text h6 span {
-    padding: 10px;
-    background: orange;
-    color: white;
-}
-
-.category-featured-text h5 {
-    margin-top: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-}
-
-.category-featured-text h5 span {
-    padding: 10px;
-    background: orange;
-    color: white;
-}
-
-.category-featured-text h2 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 5px 0;
-}
-
-
-.category-products {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    height: 700px;
-    background-color: #f6f6f6;
-}
-
-
-.hero-product-image {
-    height: 700px;
-    background-color: #eee;
-}
-
-.category-image {
-    width: 50%;
-    text-align: center;
-}
-
-.category-image img {
-    width: 80%;
-    height: auto;
-}
-
-.featured-image-text {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-/******* END REDUNDANT CODE **********/
-
 
 .big-four {
     padding-bottom: 40px;
@@ -452,12 +354,14 @@ svg {
     @media only screen and (min-width : 768px) {
     
     .row-with-height {
-    height: 150px;
+    height: 180px;
 }    
+            .logo-menu {
+    height: 180px;
+}
     
     .menu-menu {
-    text-align: right;
-    padding-right: 20px;
+    text-align: center;
 }
         
     .logo-section {
@@ -472,14 +376,23 @@ svg {
     width: 200px;
 }    
         
-    .logo-menu {
-    height: 150px;
-}
+
 
         .standard-header {
             width: 60%;
             margin-left: 20%;
         }
+        
+        .cart-box {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    background-color: #9f9f9f;
+    height: 100px;
+    width: 100px;
+    z-index: 9999;
+    border-radius: 50%;
+}
         
     }
 
