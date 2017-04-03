@@ -108,7 +108,7 @@ a:hover {
 }
 
 .row-with-height {
-    height: 180px;
+    height: 110px;
 }
 
 
@@ -169,15 +169,38 @@ text-transform: uppercase;
     font-weight: bold;
 }
 
-.cart-box {
+    .cart-box {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     right: 0;
     background-color: #9f9f9f;
-    height: 100px;
-    width: 100px;
-    z-index: 9999;
+    height: 75px;
+    width: 75px;
+    z-index: 1000;
+    box-shadow: 3px 3px 5px #888888;
     border-radius: 50%;
+    transition: all 0.5s;
 }
+        
+        .cart-box:hover {
+        height: 85px;
+        width: 85px;
+        background-color: #bfbfbf;
+        }
+        
+        
+        .cart-box i {
+            font-size: 20px;
+        }
+        
+        .cart-box p {
+            font-size: 13px;
+            padding-top: 5px;
+            margin: 0;
+        }
 
 
 .menu-menu i {
@@ -376,24 +399,12 @@ svg {
     width: 200px;
 }    
         
-
-
         .standard-header {
             width: 60%;
             margin-left: 20%;
         }
         
-        .cart-box {
-    position: absolute;
-    right: 0;
-    top: -25px;
-    background-color: #9f9f9f;
-    height: 100px;
-    width: 100px;
-    z-index: 9999;
-    border-radius: 50%;
-}
-        
+
     }
 
     /* Medium Devices, Desktops */
