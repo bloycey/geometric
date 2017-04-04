@@ -128,7 +128,7 @@ a:hover {
 
 .first-level-li {
     display: inline-block;
-    margin: 0;
+    margin-left: -4px;
     background-image: linear-gradient(#ffffff, #ffffff);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -142,14 +142,15 @@ a:hover {
     padding: 15px;
 }
 
-/*.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
 display: block;
-}*/
+}
 
 .dropdown-menu {
     top: 95%;
     border-radius: 0;
     border: none;
+    min-width: 100px;
 }
 
 .dropdown-menu li a {
@@ -395,7 +396,7 @@ svg {
     margin-bottom: 150px;
 }
 
-.testimonials-slider {
+.testimonials-container {
     margin-top: 200px;
     margin-bottom: 500px;
 }
@@ -436,7 +437,7 @@ svg {
         }
     
     .search-bar {
-    width: 200px;
+    width: 280px;
 }    
         
         .standard-header {

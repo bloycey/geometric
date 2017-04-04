@@ -1,10 +1,11 @@
-$(document).ready(function(){
-  $('.testimonial-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 300
-  });
+$( document ).ready(function() {
+   $('.testimonials-slider').bxSlider({
+  auto: true,
+  autoControls: true
 });
+});
+
+
 
 /* Set the width of the side navigation to 250px */
 
