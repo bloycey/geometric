@@ -6,6 +6,7 @@
 
 body {
     padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 html, body { max-width: 100%; overflow-x: hidden; }
@@ -142,7 +143,11 @@ a:hover {
     padding: 15px;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
+display: block;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
 display: block;
 }
 
@@ -163,6 +168,16 @@ display: block;
     background-color: transparent;
 }
 
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
 
 
 .category-menu li:hover {
@@ -266,7 +281,7 @@ text-transform: uppercase;
     background-attachment: fixed;
 }
 
-svg {
+.hero svg {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -398,9 +413,28 @@ svg {
 
 .testimonials-container {
     margin-top: 200px;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
 }
 
+
+.bx-wrapper img {
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    background-color: #f6f6f6;
+    height: 500px;
+    
+}
+
+footer svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
 
 /*==========  Mobile First Method  ==========*/
 
