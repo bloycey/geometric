@@ -1,7 +1,7 @@
 $( document ).ready(function() {
    $('.testimonials-slider').bxSlider({
   auto: true,
-  autoControls: true
+  autoControls: false
 });
 });
 
