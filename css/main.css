@@ -436,6 +436,10 @@ footer svg {
   /* set height to pixels if you want angle to change with screen width */
 }
 
+.footer-content {
+    padding-top: 15vh;
+}
+
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
