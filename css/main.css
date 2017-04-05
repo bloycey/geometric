@@ -216,7 +216,8 @@ text-transform: uppercase;
 .header-divider {
     background-color: orange;
     z-index: 9999;
-    margin-top: 0px
+    margin-top: 0px;
+    border-radius: 0;
 }
 
 .menu-container {
