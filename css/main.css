@@ -187,7 +187,7 @@ display: block;
   color: orange;
     transition: background-size .5s, color .5s;  
 }
-.search-bar-col, .logo-section {
+.search-bar-col, .logo-section, .selling-points {
     height: 100%;
     display: flex;
     align-items: center;
@@ -206,6 +206,17 @@ display: block;
     padding: 10px 10px 10px 20px;
     color: orange;
     width: 60%;
+}
+
+.selling-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.selling-list i {
+    padding: 5px;
+    font-size: 14px;
+    color: #333333;
 }
 
 .search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -361,8 +372,8 @@ text-transform: uppercase;
 
 .menu-square {
     background-color: lightgray;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0%;
     padding-top: 80%;     
 }
 
@@ -561,6 +572,13 @@ footer svg {
             display: none;
         }
         
+        .menu-square {
+    background-color: lightgray;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 80%;     
+}
+        
 
     }
 
@@ -583,6 +601,8 @@ footer svg {
 .spacer {
     height: 1000px;
 }
+
+
 
 
 
