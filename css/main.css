@@ -389,6 +389,7 @@ text-transform: uppercase;
     background-color: #2c2c2c;
     color: #ffffff;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    z-index: 1000;
 }
 
 .product-name {
@@ -398,7 +399,8 @@ text-transform: uppercase;
     padding: 10px 30px 10px 10px;
     color: #ffffff;
     background-color: #2c2c2c;
-    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);  
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+    z-index: 1000;
 }
 
 .product-overlay {
@@ -421,6 +423,17 @@ text-transform: uppercase;
     color: white;
 }
 
+.product-overlay button {
+    width: 80%;
+    padding: 4px;
+    border: none;
+    margin-bottom: 3px;
+}
+
+.cart-btn {
+    background-color: limegreen;
+}
+
 .product-overlay:hover {
     opacity: 100;
 }
@@ -433,7 +446,7 @@ text-transform: uppercase;
 
 .sale-products {
     margin-top: 250px;
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     position: relative;
 }
 
