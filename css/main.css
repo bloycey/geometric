@@ -292,7 +292,7 @@ text-transform: uppercase;
     position: relative;
     height: 80vh;
     padding-bottom: 150px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(white-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(blue-flowers.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     
@@ -375,8 +375,19 @@ text-transform: uppercase;
 }
 
 .under-hero {
-    height: 700px;
+    height:600px;
     background-color: #f6f6f6;
+    /*background-image: url(fragrance-minimal.png);*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.under-hero img {
+    max-width: 100%;
+    max-height: 500px;
+    text-align: center;
 }
 
 .menu-square {
@@ -493,10 +504,10 @@ text-transform: uppercase;
     justify-content: center;
     align-items: center;
     height: 230px;
-    background-color: #575B67;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333333;
     margin-top: -125px;
-    width: 90%;
+    width: 80%;
     margin-left: 5%;
     padding: 0 20px;
     text-align: center;
@@ -595,8 +606,8 @@ footer svg {
 }    
         
         .standard-header {
-            width: 60%;
-            margin-left: 20%;
+            width: 40%;
+            margin-left: 30%;
         }
         
         .hidden-md {
