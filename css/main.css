@@ -375,7 +375,6 @@ text-transform: uppercase;
 }
 
 .under-hero {
-    height:600px;
     background-color: #f6f6f6;
     /*background-image: url(fragrance-minimal.png);*/
     background-size: contain;
@@ -387,6 +386,7 @@ text-transform: uppercase;
 .under-hero img {
     max-width: 100%;
     max-height: 500px;
+    margin-bottom: 110px;
     text-align: center;
 }
 
@@ -489,12 +489,21 @@ text-transform: uppercase;
 }
 
 
-.sale-products {
+.category-products {
     background-color: #ffffff;
     position: relative;
 }
 
-.sale-grid {
+.sale-products {
+    position: relative;
+}
+
+.category-grid {
+    padding: 0 10%;
+    margin-bottom: 150px;
+}
+
+.category-grid, .sale-grid {
     padding: 0 10%;
 }
 
@@ -507,8 +516,8 @@ text-transform: uppercase;
     background-color: #ffffff;
     color: #333333;
     margin-top: -125px;
-    width: 80%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0%;
     padding: 0 20px;
     text-align: center;
     box-shadow: 5px 5px 20px #888888;
@@ -518,7 +527,7 @@ text-transform: uppercase;
     margin-bottom: -125px;
 }
 
-.sale-products-header h2 {
+.category-products-header h2 {
     text-transform: uppercase;
 }
 
@@ -534,13 +543,8 @@ text-transform: uppercase;
     margin-bottom: 100px;
 }
 
-section.testimonials {
+section.sale-products {
     background-color: #f6f6f6;
-}
-
-.testimonials-container {
-    margin-top: 200px;
-    margin-bottom: 100px;
 }
 
 
