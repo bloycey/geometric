@@ -66,7 +66,7 @@ a:hover {
 
 .sidenav .menu-item:hover, .offcanvas a:focus{
     color: #ffffff;
-    background-color: #A4B8D0;
+    background-color: #464e79;
     
 }
 
@@ -77,7 +77,7 @@ a:hover {
     left: 25px;
     font-size: 36px;
     margin-right: 50px;
-    color: #A4B8D0;
+    color: #464e79;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -124,13 +124,13 @@ a:hover {
 }
 
 .category-menu a {
-    color: #333333;
+    color: #ffffff;
 }
 
 .first-level-li {
     display: inline-block;
     margin-left: -4px;
-    background-image: linear-gradient(#ffffff, #ffffff);
+    /*background-image: linear-gradient(#ffffff, #ffffff);*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -166,7 +166,7 @@ display: block;
 
 .dropdown-menu>li>a:hover {
     background-image: none;
-    background-color: #A4B8D0;
+    background-color: #464e79;
     color: white;
 }
 
@@ -181,10 +181,9 @@ display: block;
     margin-top: -1px;
 }
 
-
 .category-menu li:hover {
    background-size: 100% 100%;
-  color: #A4B8D0;
+  /*color: #464e79;*/
     transition: background-size .5s, color .5s;  
 }
 .search-bar-col, .logo-section, .selling-points {
@@ -199,12 +198,12 @@ display: block;
 }
 
 .search-bar {
-    border-color: #A4B8D0;
+    border-color: #464e79;
     border-style: solid;
     border-radius: 20px;
     box-shadow: none;
     padding: 10px 10px 10px 20px;
-    color: #A4B8D0;
+    color: #464e79;
     width: 60%;
 }
 
@@ -220,12 +219,12 @@ display: block;
 }
 
 .search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #A4B8D0;
+  color: #464e79;
 text-transform: uppercase;
 }
 
 .header-divider {
-    background-color: #A4B8D0;
+    background-color: #464e79;
     z-index: 9999;
     margin-top: 0px;
     border-radius: 0;
@@ -244,7 +243,7 @@ text-transform: uppercase;
 .menu-menu button {
     padding: 10px 20px;
     background-color: #ffffff;
-    color: #A4B8D0;
+    color: #464e79;
     font-weight: bold;
 }
 
@@ -292,9 +291,11 @@ text-transform: uppercase;
     position: relative;
     height: 80vh;
     padding-bottom: 150px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(blue-flowers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(lavender.jpg);
+    background-color: #ffffff;
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     
 }
 
@@ -324,6 +325,7 @@ text-transform: uppercase;
 
 .hero-cta h1 {
     margin-top: 15%;
+    color: #ffffff;
 }
 
 .hero-cta h5 {
@@ -337,22 +339,22 @@ text-transform: uppercase;
 
 .hero-btn-1 {
     background-color: #ffffff;
-    border: 2px solid #F99190;
-    color: #F99190;
+    border: 2px solid #B6174B;
+    color: #B6174B;
     text-transform: uppercase;
     font-weight: bold;
     transition: all 0.3s;
 }
 
 .hero-btn-1:hover {
-    background-color: #F99190;
+    background-color: #B6174B;
     color: #ffffff;
     box-shadow: 5px 5px 10px #888888;
 }
 
 .hero-btn-2 {
-    background-color: #F99190;
-    border: 2px solid #F99190;
+    background-color: #B6174B;
+    border: 2px solid #B6174B;
     color: #ffffff;
     margin-left: 20px;
     text-transform: uppercase;
@@ -361,7 +363,7 @@ text-transform: uppercase;
 
 .hero-btn-2:hover {
     background-color: white;
-    color: #F99190;
+    color: #B6174B;
     border: 2px solid #ffffff;
     box-shadow: 5px 5px 10px #888888;
 }
@@ -401,7 +403,7 @@ text-transform: uppercase;
 .menu-square.special-home {
     position: relative;
     padding-top: 0px;
-    margin-top: 60px;
+    margin-top: 100px;
     background-color: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
@@ -444,7 +446,7 @@ text-transform: uppercase;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(31, 31, 31, 0.6);
+    background-color: rgba(31, 31, 31, 0.75);
     opacity: 0;
     transition: all ease 0.5s;
 }
@@ -473,7 +475,7 @@ text-transform: uppercase;
 }
 
 .cart-btn {
-    background-color: #F99190;
+    background-color: #e21d5e;
     border-radius: 5px;
     width: 60%;
     color: #ffffff;
@@ -504,7 +506,7 @@ text-transform: uppercase;
 
 .newsletter-text h3 {
     color: #ffffff;
-    z-index: 9999;
+    z-index: 5000;
 }
 
 .newsletter-sign-up .top {
