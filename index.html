@@ -86,7 +86,7 @@
           <li><a href="#">Subcategory 5</a></li>
           <li><a href="#">Subcategory 6</a></li>
           
-        </ul>  
+        </ul>   
                         <li class="first-level-li"><a href="#">Menu item 2</a></li>
                        <li class="first-level-li"><a href="#">Menu item 3</a></li>
                        <li class="first-level-li"><a href="#">Menu item 4</a></li>
@@ -139,7 +139,7 @@
        </div>
         
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon points="0 0,100 100, 0 100, 0 0" style="fill:#f6f6f6"/>
+    <polygon points="0 0,100 100, 0 100, 0 0" style="fill:#ffffff"/>
   </svg>
     </div>
 
@@ -160,12 +160,18 @@
             
         </div>
      
-        </div> <!-- /container --> 
+        
     
     
-<section class="category-products">    
+<section class="category-products"> 
+    <div class="align-center">
+           <h2 class="ribbon-heading">Best Sellers</h2>
+       <!---<div class="arrow-downward">⌔</div>-->      
+       </div>  
     <div class="container-fluid category-products">
+      
         <div class="container-fluid category-grid">
+        
     
         <div class=" col-xs-12 col-sm-6 col-md-3 product-square">
         <div class="menu-square special-home">
@@ -253,21 +259,39 @@
             
 <section class="newsletter-sign-up">
  <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" points="0 0, 100 0, 100 100, 0 0" style="fill:#ffffff"/>
+    <polygon fill="white" points="0 0, 100 0, 100 100, 0 0" style="fill:#f6f6f6"/>
           </svg>
   
     <div class="container newsletter-text">  
-         <h3>Like smelling like roses and nutmeg and whatnot? Sign up to our newsletter!</h3>  
+         <h3>Like smelling like roses and nutmeg and whatnot? Sign up to our newsletter!</h3>
+         <form method="post" id="subscribe-form" action="[%URL type:'page' id:'subscribe' https:'1'%][%END URL%]">
+						<input type="hidden" name="list_id" value="1">
+						<input type="hidden" name="opt_in" value="y">
+						<div class="input-group">
+							<input name="inp-email" class="form-control" type="email" value="[%nohtml%][@inp-email@][%/nohtml%]" placeholder="Email Address" required/>
+							<input name="inp-submit" type="hidden" value="y" />
+							<input name="inp-opt_in" type="hidden" value="y" />
+							<span class="input-group-btn">
+								<input class="btn btn-default" type="submit" value="Subscribe" data-loading-text="<i class='fa fa-spinner fa-spin' style='font-size: 14px'></i>"/>
+							</span>
+						</div>
+					</form>
+        
     </div>      
+    
   <svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" points="0 0, 100 100, 0 100, 0 0" style="fill:#f6f6f6"/>
+    <polygon fill="white" points="0 0, 100 100, 0 100, 0 0" style="fill:#ffffff"/>
           </svg>  
     
 </section>    
             
                             
             
-    <section class="sale-products">    
+    <section class="sale-products">
+     <div class="align-center">
+           <h2 class="ribbon-heading-center">Best Sellers</h2>
+        <!---- <div class="arrow-down"></div> --->          
+       </div>      
     <div class="container-fluid sale-products">
         <div class="container-fluid sale-grid">
     
@@ -361,7 +385,7 @@
 
       <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" points="0 0, 100 0, 100 100, 0 0" style="fill:#f6f6f6"/>
+    <polygon fill="white" points="0 0, 100 0, 100 100, 0 0" style="fill:#ffffff"/>
           </svg>
     <div class="container footer-content">
         <div class="row">

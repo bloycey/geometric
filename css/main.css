@@ -377,7 +377,7 @@ text-transform: uppercase;
 }
 
 .under-hero {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
     /*background-image: url(fragrance-minimal.png);*/
     background-size: contain;
     background-position: center;
@@ -390,6 +390,69 @@ text-transform: uppercase;
     max-height: 500px;
     margin-bottom: 110px;
     text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.ribbon-heading {
+    margin: 80px 0 30px 0;
+    background-color: #B6174B;
+    display: inline-block;
+    min-width: 30%;
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.ribbon-heading-center {
+    margin-top: 60px;
+    background-color: #B6174B;
+    display: inline-block;
+    min-width: 30%;
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+    margin-bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+    text-transform: uppercase;
+    box-shadow: 20px 20px 20px black;
+    position: relative;
+}
+
+
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #333333;
+  margin: 0 auto;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1000;
+    box-shadow: 10px 10px 10px;
+}
+
+.arrow-downward {
+    font-size: 70px;
+    color: #333333;
+    padding:0px;
+    margin-top: -50px;
+    position: relative;
 }
 
 .menu-square {
@@ -492,7 +555,7 @@ text-transform: uppercase;
 
 
 .category-products {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     position: relative;
 }
 
@@ -531,6 +594,7 @@ text-transform: uppercase;
     align-content: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 1000;
 }
 
@@ -584,7 +648,20 @@ text-transform: uppercase;
 }
 
 section.sale-products {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
+}
+
+
+#subscribe-form {
+    display: block !important;
+    width: 30%;
+    position: relative;
+    margin-top: 20px
+}
+
+input[type='submit'] {
+    background-color: #B6174B;
+    color: #ffffff;
 }
 
 
@@ -595,8 +672,7 @@ section.sale-products {
 footer {
     position: relative;
     background-color: #333333;
-    color: #ffffff;
-    
+    color: #ffffff;  
 }
 
 footer svg {
