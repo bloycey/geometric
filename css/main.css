@@ -494,13 +494,51 @@ text-transform: uppercase;
     position: relative;
 }
 
+.newsletter-sign-up {
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(succulent.jpg);
+    background-size: cover;
+    background-attachment: fixed; /*Custom Config*/
+    position: relative;
+}
+
+.newsletter-text h3 {
+    color: #ffffff;
+    z-index: 9999;
+}
+
+.newsletter-sign-up .top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.newsletter-sign-up .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.newsletter-text {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
 .sale-products {
     position: relative;
 }
 
 .category-grid {
     padding: 0 10%;
-    margin-bottom: 150px;
+    margin-bottom: 0px;
 }
 
 .category-grid, .sale-grid {
