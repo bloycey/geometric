@@ -314,7 +314,15 @@ text-transform: uppercase;
     left: 0;
   width: 100%;
   height: 15vh;
+    fill: #f6f6f6;
   /* set height to pixels if you want angle to change with screen width */
+}
+
+.category-products svg {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    fill: #ffffff;
 }
 
 .jumbotron {
@@ -402,8 +410,8 @@ text-transform: uppercase;
 .under-hero img {
     max-width: 100%;
     max-height: 500px;
-    margin-bottom: 110px;
-    margin-top:50px;
+    margin-bottom: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -421,7 +429,7 @@ text-transform: uppercase;
 
 
 .ribbon-heading-center {
-    margin-top: 60px;
+    margin-top: 160px;
     font-size: 290%;
     background-color: #B6174B;
     display: inline-block;
@@ -436,7 +444,9 @@ text-transform: uppercase;
     position: relative;
 }
 
-
+.ribbon-heading-center.secondary {
+    margin-top: 105px;
+}
 
 .arrow-down {
   width: 0; 
@@ -561,11 +571,14 @@ text-transform: uppercase;
 
 .category-products {
     background-color: #f6f6f6;
+    background-image: url(geometry2/geometry2.png);
+    background-repeat:repeat;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .newsletter-sign-up {
-    height: 700px;
+    height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(succulent.jpg);
     background-size: cover;
     background-attachment: fixed; /*Custom Config*/
@@ -606,6 +619,8 @@ text-transform: uppercase;
 .sale-products {
     position: relative;
     background-color: #f6f6f6;
+    background-image:url(geometry2/geometry2.png);
+    padding-bottom: 70px;
 }
 
 .category-grid {
@@ -653,10 +668,6 @@ text-transform: uppercase;
     margin-bottom: 100px;
 }
 
-section.sale-products {
-    background-color: #ffffff;
-}
-
 
 #subscribe-form {
     display: block !important;
@@ -692,16 +703,17 @@ footer {
     color: #ffffff;  
 }
 
-footer svg {
+.sale-products svg {
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 15vh;
+    fill: #333333;
   /* set height to pixels if you want angle to change with screen width */
 }
 
 .footer-content {
-    padding-top: 15vh;
+    padding-top: 40px;
 }
 
 /*==========  Mobile First Method  ==========*/
