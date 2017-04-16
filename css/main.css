@@ -424,7 +424,6 @@ text-transform: uppercase;
     height: 100%;
 }
 
-.second-panel
 
 .second-panel-text h2 {
     font-size: 400%;
@@ -435,6 +434,10 @@ text-transform: uppercase;
 .second-panel-text h4 {
     font-size: 150%;
     margin-bottom: 30px;
+}
+
+.second-panel-text p {
+    color: #333333;
 }
 
 .second-panel-image {
@@ -786,6 +789,7 @@ footer {
     
     .search-bar {
     width: 280px;
+        outline: none;
 }    
         
         .standard-header {
