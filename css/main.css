@@ -263,19 +263,20 @@ text-transform: uppercase;
     align-items: center;
     justify-content: center;
     right: 0;
-    background-color: #9f9f9f;
+    background-color: #B6174B;
     height: 75px;
     width: 75px;
     z-index: 1000;
-    box-shadow: 3px 3px 5px #888888;
+    box-shadow: 3px 3px 5px #2c2c2c;
     border-radius: 50%;
     transition: all 0.5s;
+    color: #ffffff;
 }
         
         .cart-box:hover {
         height: 85px;
         width: 85px;
-        background-color: #bfbfbf;
+        background-color: #B6174B;
         }
         
         
@@ -300,7 +301,7 @@ text-transform: uppercase;
     position: relative;
     height: 80vh;
     padding-bottom: 150px;
-    background-image: linear-gradient(to bottom, #ffffff, rgba(70, 78, 121, 0)), url(lavender.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(succulent.jpg);
     background-color: #ffffff;
     background-repeat:no-repeat;
     background-size: cover;
@@ -344,14 +345,14 @@ text-transform: uppercase;
 .hero-cta h1 {
     margin-top: 15%;
     font-size: 10vh;
-    color: #2c2c2c;
+    color: #ffffff;
 }
 
 .hero-cta h5 {
     font-size: 18px;
     font-weight: bold;
     padding: 10px 10px 30px 10px;
-    color: #2c2c2c;
+    color: #ffffff;
 }
 
 .hero-cta button {
@@ -397,22 +398,55 @@ text-transform: uppercase;
     margin-top: 45%
 }
 
-.under-hero {
-    background-color: #ffffff;
-    /*background-image: url(fragrance-minimal.png);*/
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative;
+.second-panel {
+    height: 450px;
 }
 
-.under-hero img {
-    max-width: 100%;
-    max-height: 500px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    text-align: center;
+.second-panel button {
+    width: 150px;
+    padding: 6px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: linear 0.1s;
+    background-color: #464e79;
+    color: #ffffff;
+}
+
+.second-panel button:hover {
+    transform: scale(1.05);
+}
+
+.second-panel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.second-panel
+
+.second-panel-text h2 {
+    font-size: 400%;
+    margin-bottom: 0px;
+    color: #464e79;
+}
+
+.second-panel-text h4 {
+    font-size: 150%;
+    margin-bottom: 30px;
+}
+
+.second-panel-image {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.second-panel-image img {
+    max-height: 400px;
 }
 
 .align-left {
