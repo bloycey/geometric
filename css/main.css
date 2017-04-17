@@ -125,6 +125,7 @@ a:hover {
     margin:0;
     border: none;
     min-height: 40px;
+    border-bottom: 2px solid #464e79;
 }
 
 .category-menu {
@@ -138,7 +139,7 @@ a:hover {
 
 .first-level-li {
     display: inline-block;
-    margin-left: -4px;
+    margin-left: 0;
     /*background-image: linear-gradient(#ffffff, #ffffff);*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -150,6 +151,10 @@ a:hover {
 
 .first-level-li, .first-level-li a {
     padding: 15px;
+}
+
+.first-level-li > a:hover {
+    border-bottom: 2px solid #ffffff;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -164,8 +169,12 @@ display: block;
     top: 95%;
     border-radius: 0;
     border: none;
-    min-width: 100px;
     padding: 0;
+    left: 20px;
+}
+
+.dropdown-menu li a {
+    margin-left: 30px;
 }
 
 .dropdown-menu li a, .dropdown-submenu li a {
@@ -644,7 +653,7 @@ text-transform: uppercase;
     background-image: url(geometry2/geometry2.png);
     background-repeat:repeat;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .newsletter-sign-up {
@@ -690,13 +699,12 @@ text-transform: uppercase;
     position: relative;
     background-color: #f6f6f6;
     background-image:url(geometry2/geometry2.png);
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 .sale-grid, .category-grid {
     padding: 0;
 }
-
 
 .standard-header {
     display: flex;
@@ -720,18 +728,6 @@ text-transform: uppercase;
 
 .category-products-header h2 {
     text-transform: uppercase;
-}
-
-.sale-items {
-    margin-top: 75px;
-}
-
-.special-home {
-    margin-top: 50px;
-}
-
-.special-home-last {
-    margin-bottom: 100px;
 }
 
 
