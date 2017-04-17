@@ -309,13 +309,14 @@ text-transform: uppercase;
     
 }
 
-.hero svg, .under-hero svg {
+
+.hero svg {
   position: absolute;
   bottom: 0;
     left: 0;
   width: 100%;
   height: 15vh;
-    fill: #f6f6f6;
+    fill: #ffffff;
   /* set height to pixels if you want angle to change with screen width */
 }
 
@@ -398,8 +399,12 @@ text-transform: uppercase;
     margin-top: 45%
 }
 
+.second-panel-section {
+    margin-top: -75px;
+}
+
 .second-panel {
-    height: 550px;
+    height: 600px;
 }
 
 .second-panel button {
@@ -850,7 +855,7 @@ footer {
 
 
   /* Extra Large Devices, Wide Screens */
-    @media only screen and (min-width : 1600px) {
+    @media only screen and (min-width : 1700px) {
 
     .category-grid, .sale-grid {
     padding: 0 10%;
