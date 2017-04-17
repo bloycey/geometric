@@ -4,12 +4,37 @@
    Author's custom styles
    ========================================================================== */
 
+
+/********************* Document Styles ********************/
+
 body {
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
+/* Prevent any scrollbars */
+
 html, body { max-width: 100%; overflow-x: hidden; }
+
+a:hover {
+    text-decoration: none;  
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/********************************************************/
+
+/************************Typography************************/
 
 html * {
     font-family: 'Open Sans', sans-serif;
@@ -19,24 +44,26 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Julius Sans One', sans-serif !important;
 }
 
-
- .affix {
-      top: 0;
-      width: 100%
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
+/********************************************************/
+ 
 
 
-a:hover {
-    text-decoration: none;  
+
+/****************** MOBILE MENU **************************/
+
+.mobile-menu {
+    text-align: center;
+    padding: 5px;
+}
+.mobile-menu button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #464e79;
+    font-weight: bold;
+    border: none;
 }
 
-/****** MENU *********/
 
-/* The side navigation menu */
 .sidenav {
     display: flex;
     flex-direction: column;
@@ -89,13 +116,8 @@ a:hover {
     color: #464e79;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 480px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 480px) {
     .sidenav {padding: 0px; width: 0 !important; height: 0 !important}
     .sidenav a {font-size: 18px;}
@@ -103,12 +125,32 @@ a:hover {
 
 
 
-/*****************/
+/*********************************/
 
+/**********Bootstrap fixed menu on scroll **************/
 
-.menu-menu button {
-    border: none;
-    padding: 5px
+.affix {
+      top: 0;
+      width: 100%
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+/****************************************************/
+
+/**************************** Top Row Above Menu *********************************/
+
+.top-row {
+    height: 110px;
+}
+
+.search-bar-col, .logo-section, .selling-points {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -117,15 +159,59 @@ a:hover {
     max-height: 100%;
 }
 
-.row-with-height {
-    height: 110px;
+.search-bar-col {
+    justify-content: center;
 }
+
+.search-bar {
+    border-color: #464e79;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 10px 10px 10px 20px;
+    color: #464e79;
+    width: 60%;
+}
+
+.search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #464e79;
+text-transform: uppercase;
+}
+
+.selling-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.selling-list i {
+    padding: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #B6174B;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/******************************************************************************/
+
+/********************************** MAIN NAVIGATION **************************/
 
 .navbar {
     margin:0;
     border: none;
     min-height: 40px;
     border-bottom: 2px solid #464e79;
+}
+
+.header-divider {
+    background-color: #464e79;
+    z-index: 9999;
+    margin-top: 0px;
+    border-radius: 0;
+}
+
+.menu-container {
+    position: relative;
 }
 
 .category-menu {
@@ -201,74 +287,9 @@ display: block;
 
 .category-menu li:hover {
    background-size: 100% 100%;
-  /*color: #464e79;*/
     transition: background-size .5s, color .5s;  
 }
-.search-bar-col, .logo-section, .selling-points {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-
-
-.search-bar-col {
-    justify-content: center;
-}
-
-.search-bar {
-    border-color: #464e79;
-    border-style: solid;
-    border-radius: 20px;
-    box-shadow: none;
-    padding: 10px 10px 10px 20px;
-    color: #464e79;
-    width: 60%;
-}
-
-.selling-list li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.selling-list i {
-    padding: 5px;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #B6174B;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #464e79;
-text-transform: uppercase;
-}
-
-.header-divider {
-    background-color: #464e79;
-    z-index: 9999;
-    margin-top: 0px;
-    border-radius: 0;
-}
-
-.menu-container {
-    position: relative;
-}
-
-
-
-.menu-menu {
-    text-align: center;
-    padding: 5px;
-}
-.menu-menu button {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #464e79;
-    font-weight: bold;
-}
 
     .cart-box {
     position: absolute;
@@ -304,12 +325,9 @@ text-transform: uppercase;
             margin: 0;
         }
 
+/****************************************************************************/
 
-.menu-menu i {
-    color: #ffffff;
-    font-size: 20px;
-    height: 100%;
-}
+/*************************** HERO SECTION **************************************/
 
 .hero.jumbotron {
     position: relative;
@@ -319,10 +337,8 @@ text-transform: uppercase;
     background-color: #ffffff;
     background-repeat:no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;  
 }
-
 
 .hero svg {
   position: absolute;
@@ -332,18 +348,6 @@ text-transform: uppercase;
   height: 15vh;
     fill: #ffffff;
   /* set height to pixels if you want angle to change with screen width */
-}
-
-.category-products svg {
-    position: absolute;
-    width: 100%;
-    height: 15vh;
-    fill: #ffffff;
-}
-
-.jumbotron {
-    padding: 0;
-    margin-bottom: 0; 
 }
 
 .hero.container, .hero.row {
@@ -375,21 +379,6 @@ text-transform: uppercase;
 }
 
 .hero-btn-1 {
-    background-color: #ffffff;
-    border: 2px solid #B6174B;
-    color: #B6174B;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.hero-btn-1:hover {
-    background-color: #B6174B;
-    color: #ffffff;
-    box-shadow: 5px 5px 10px #888888;
-}
-
-.hero-btn-2 {
     background-color: #B6174B;
     border: 2px solid #B6174B;
     color: #ffffff;
@@ -398,7 +387,7 @@ text-transform: uppercase;
     font-weight: bold;
 }
 
-.hero-btn-2:hover {
+.hero-btn-1:hover {
     background-color: white;
     color: #B6174B;
     border: 2px solid #ffffff;
@@ -413,7 +402,12 @@ text-transform: uppercase;
     margin-top: 45%
 }
 
-    .second-panel-section {
+/***************************************************************************/
+
+/**************************** SECOND PANEL **********************************/
+
+    
+.second-panel-section {
     padding: 50px 0;
 }
 
@@ -428,9 +422,9 @@ text-transform: uppercase;
     color: #ffffff;
 }
 
-.second-panel button:hover {
-    transform: scale(1.05);
-}
+    .second-panel button:hover {
+        transform: scale(1.05);
+    }
 
 .second-panel-text {
     display: flex;
@@ -449,6 +443,7 @@ text-transform: uppercase;
 .second-panel-text h4 {
     font-size: 150%;
     margin-bottom: 30px;
+    color: #333333;
 }
 
 .second-panel-text p {
@@ -467,18 +462,9 @@ text-transform: uppercase;
     max-height: 400px;
 }
 
-.align-left {
-    text-align: left;
-}
+/******************************************************************************/
 
-.align-right {
-    text-align: right;
-}
-
-.align-center {
-    text-align: center;
-}
-
+/***************************** HOMEPAGE PRODUCTS 1 ******************************/
 
 .ribbon-heading-center {
     margin-top: 100px;
@@ -496,29 +482,8 @@ text-transform: uppercase;
     position: relative;
 }
 
-.ribbon-heading-center.secondary {
+.ribbon-heading-center.first {
     margin-top: 105px;
-}
-
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 40px solid #333333;
-  margin: 0 auto;
-  margin-top: -20px;
-  position: relative;
-  z-index: 1000;
-    box-shadow: 10px 10px 10px;
-}
-
-.arrow-downward {
-    font-size: 70px;
-    color: #333333;
-    padding:0px;
-    margin-top: -50px;
-    position: relative;
 }
 
 .menu-square {
@@ -801,7 +766,7 @@ footer {
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
     
-    .row-with-height {
+    .top-row {
     height: 180px;
 }    
             .logo-menu {
