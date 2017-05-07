@@ -1,8 +1,4 @@
 $( document ).ready(function() {
-   $('.testimonials-slider').bxSlider({
-  auto: true,
-  autoControls: false
-});
     $('.dropdown-submenu a.test').on("click", function(e){
     $(this).next('ul').toggle();
     e.stopPropagation();
